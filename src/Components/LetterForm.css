@@ -1,0 +1,113 @@
+/* LetterForm.css */
+
+/* General form styling */
+form {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea, input[type="date"], input[type="time"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  /* Countdown box styling */
+  .countdown-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f6f8fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .countdown-box h3 {
+    font-size: 1.5rem;
+    color: #4b7bec;
+  }
+  
+  .countdown-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Delete button styling */
+  .delete-btn {
+    background-color:  #6166ff; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #2b62c0;
+  }
+  
+ 
+  .messages-container {
+    margin-top: 20px;
+  }
+  
+  .message-card {
+    background-color: rgb(195, 177, 254);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Text input fields for message, date, and time */
+  input[type="date"],
+  input[type="time"] {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4b7bec;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #357ae8;
+  }
+  

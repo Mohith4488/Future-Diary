@@ -1,38 +1,133 @@
-.App {
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #8b42d9, #5b89d7);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+
+
+h1 {
   text-align: center;
+  color: #265ddd;
+  margin-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+p {
+  text-align: center;
+  color: #333333; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+label {
+  font-weight: bold;
+  color:  #265ddd;
+}
+
+textarea, input[type="date"], input[type="time"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #E0E0E0; 
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+button {
+  padding: 14px;
+  background-color: #6166ff; 
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #D64B3F; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.futurebot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #265ddd;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.futurebot-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+
+.futurebot-window h3 {
+  font-size: 18px;
+  color:  #265ddd;
+  margin-bottom: 10px;
+}
+
+.futurebot-window .bot-reply {
+  background-color: #A8DADC;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.futurebot-window input[type="text"] {
+  width: calc(100% - 60px);
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #E0E0E0; 
+  background-color: #fff;
+}
+
+.futurebot-window button {
+  padding: 10px;
+  background-color: #FF6F61; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.futurebot-window button:hover {
+  background-color: #D64B3F; 
 }

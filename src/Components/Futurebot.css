@@ -1,0 +1,46 @@
+.futurebot-box {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #fff7e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.futurebot-box h2 {
+  font-size: 1.8rem;
+  color: #ff914d;
+}
+
+.futurebot-box input {
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.futurebot-box button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4d74ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.futurebot-box button:hover {
+  background-color: #2f79e0;
+}
+
+.bot-reply {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
