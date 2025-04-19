@@ -77,7 +77,7 @@ button:hover {
   padding: 15px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .futurebot-window {
@@ -87,7 +87,7 @@ button:hover {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
   width: 300px;
   max-height: 400px;
   overflow-y: auto;

@@ -1,6 +1,6 @@
 /* LetterForm.css */
 
-/* General form styling */
+ 
 form {
     margin-top: 30px;
     max-width: 600px;
@@ -25,7 +25,7 @@ form {
     height: 150px;
   }
   
-  /* Countdown box styling */
+ 
   .countdown-box {
     margin-top: 30px;
     padding: 20px;
@@ -46,7 +46,7 @@ form {
     color: #333;
   }
   
-  /* Delete button styling */
+ 
   .delete-btn {
     background-color:  #6166ff; 
     color: white;
@@ -83,7 +83,7 @@ form {
     color: #333;
   }
   
-  /* Text input fields for message, date, and time */
+ 
   input[type="date"],
   input[type="time"] {
     display: block;

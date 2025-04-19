@@ -19,13 +19,14 @@
   padding: 10px;
   width: 80%;
   font-size: 16px;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
   border-radius: 5px;
   border: 1px solid #ccc;
+  display: block;
 }
 
 .futurebot-box button {
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #4d74ff;
@@ -33,6 +34,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  display: block;
 }
 
 .futurebot-box button:hover {

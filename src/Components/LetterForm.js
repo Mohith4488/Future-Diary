@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Confetti from 'react-confetti';
 import { useWindowSize } from '@react-hook/window-size';
-import { jsPDF } from 'jspdf'; // Import jsPDF
+import { jsPDF } from 'jspdf'; 
 import './LetterForm.css';
 
 function LetterForm() {
@@ -21,7 +21,7 @@ function LetterForm() {
     }
   }, []);
 
-  // Countdown updates every second
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       const updatedMessages = [...messagesRef.current];
@@ -34,34 +34,34 @@ function LetterForm() {
           msg.shown = true;
         }
 
-        // Update countdown for each message
+      
         const updatedCountdown = calculateCountdown(msg.deliveryDate, msg.deliveryTime);
         updatedMessages[index].countdown = updatedCountdown;
       });
 
       if (confettiTriggered) {
-        setMessages(updatedMessages); // Trigger re-render when confetti is shown
+        setMessages(updatedMessages);  
         messagesRef.current = updatedMessages;
         localStorage.setItem('messages', JSON.stringify(updatedMessages));
 
         setShowConfetti(true);
-        setTimeout(() => setShowConfetti(false), 5000); // Show confetti for 5 seconds
+        setTimeout(() => setShowConfetti(false), 7000);  
       } else {
         setMessages(updatedMessages);
       }
-    }, 1000); // Every second
+    }, 1000);  
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval); 
   }, [messages]);
 
-  // Function to check if countdown has finished
+  
   const isCountdownOver = (date, time) => {
     const target = new Date(`${date}T${time}:00`).getTime();
     const now = new Date().getTime();
     return now >= target;
   };
 
-  // Function to calculate countdown for each message
+ 
   const calculateCountdown = (deliveryDate, deliveryTime) => {
     const combinedDateTime = new Date(`${deliveryDate}T${deliveryTime}:00`);
     const now = new Date().getTime();
@@ -112,7 +112,7 @@ function LetterForm() {
       deliveryTime,
       prediction: randomPrediction,
       shown: false,
-      countdown: calculateCountdown(deliveryDate, deliveryTime), // Initial countdown
+      countdown: calculateCountdown(deliveryDate, deliveryTime),  
     };
 
     const updatedMessages = [...messagesRef.current, newMessage];
@@ -132,7 +132,7 @@ function LetterForm() {
     localStorage.setItem('messages', JSON.stringify(updatedMessages));
   };
   
-  // Function to download messages as PDF
+ 
   const downloadPDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(16);
@@ -158,7 +158,7 @@ function LetterForm() {
       yPosition += 15;
     });
 
-    // Save the generated PDF
+ 
     doc.save('messages.pdf');
   };
 
